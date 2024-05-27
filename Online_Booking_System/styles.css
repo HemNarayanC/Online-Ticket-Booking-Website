@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.nav_logo{
+    font-size: 20px;
+    font-family: 'ubuntu';
+    font-weight: 700;
+}
+
+.nav_logo #front{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(5, 5, 93);
+    font-family: "Titan One", sans-serif;
+}
+
+nav{
+    /* position: fixed; */
+    display: flex;
+    width: 100%;
+    /* height: auto; */
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    border-bottom: 1px solid rgb(202, 200, 200);
+}
+
+nav .menu .nav_links, .link{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    margin: 0 15px;
+}
+
+nav .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .menu .nav_links .link a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    padding: 2px 7px;
+    font-weight: 500;
+    font-size: 12px;
+    /* margin: 3px 8px; */
+}
+
+nav .menu .nav_links .link a:hover, nav .menu .nav_links .link a:active{
+    color: #ee0653;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 5px;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #3d5cb8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .container_opt_tickets{
+    display: flex;
+    margin-left: 130px;
+  }
+
+  .opt_tickets a{
+    color: black;
+    font-size: 12px;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+  }
+
+.container_opt_tickets img{
+    width: 20px;
+    height: 25px;
+}
+
+.icons{
+    margin: 0 15px;
+}
+
+.main-container{
+    height: 300px;
+    width: 100%;
+    margin: 10px 0px;
+    background-color: rgb(114, 216, 237);
+}
+
+.main-container-multicity{
+    height: 400px;
+    width: 100%;
+    margin: 10px 0px;
+    background-color: rgb(114, 216, 237);
+}
+
+#first-section, #second-section, #third-section{
+    margin: 4px auto;
+    padding: 15px 0px;
+    width: 75%;
+    position: relative;
+    /* border: 2px solid teal; */
+    top: 45px;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'ubuntu', 'sans-serif';
+    font-size: 12px;
+    color: black;
+}
+
+#second-section{
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgb(220, 219, 219);
+    height: 100px;
+    border-radius: 3px;
+}
+
+.second-section-multicity{
+     /* flex-wrap: wrap; */
+     justify-content: space-between;
+     background-color: #ffffff;
+     box-shadow: 2px 2px 5px rgb(220, 219, 219);
+     height: 180px;
+     border-radius: 3px;
+}
+
+#third-section{
+    flex-direction: row-reverse;
+}
+
+#third-section .contact-btn .btn{
+    margin: 0px 15px;
+}
+
+.air_tagline{
+    width: 65%;
+    padding: 15px 15px;
+    font-family: "Exo 2", sans-serif;
+    margin: auto;
+    color: #ee0653;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.aeroplane_background{
+    height: 300px;
+    width: 50%;
+    background-color: rgba(201, 245, 242, 0.4);
+    margin: 30px auto;
+    border-radius: 35%;
+}
+
+.aeroplane_background img{
+    position: relative;
+    top: -45px;
+    right: 50px;
+}
+
+.trip_num{
+    padding: 5px;
+    font-family: 'ubuntu';
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 5px;
+}
+
+.trip_num a{
+    text-decoration: none;
+}
+
+.trip_info{
+    width: 40%;
+    padding: 1px 5px;
+    border-right: 1px solid rgb(226, 226, 226);
+}
+
+.input-data{
+    width: 100%;
+    height: 20px;
+    position: relative;
+    top: 15px;
+}
+
+.main-container p{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(36, 36, 36);
+}
+
+.destination_opt{
+    margin: 4px 0;
+}
+
+.destination_opt select{
+    font-size: 10px;
+    font-family: 'ubuntu';
+    outline: none;
+    border: none;
+}
+
+.input-data input{
+    font-family: 'ubuntu';
+    font-size: 10px;
+    /* color: red; */
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid silver;
+}
+
+.input-data input:focus{
+    border-color: #ee0653;
+    transition: all ease-in 0.4s;
+}
+

@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.nav_logo{
+    font-size: 20px;
+    font-family: 'ubuntu';
+    font-weight: 700;
+}
+
+.nav_logo #front{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(5, 5, 93);
+    font-family: "Titan One", sans-serif;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    /* height: auto; */
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    border-bottom: 1px solid rgb(202, 200, 200);
+}
+
+nav .menu .nav_links, .link{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    margin: 0 15px;
+}
+
+nav .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .menu .nav_links .link a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    padding: 2px 7px;
+    font-weight: 500;
+    font-size: 12px;
+    /* margin: 3px 8px; */
+}
+
+nav .menu .nav_links .link a:hover, nav .menu .nav_links .link a:active{
+    color: #ee0653;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.btn {
+    padding: 5px;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #3d5cb8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .container_opt_tickets{
+    display: flex;
+    margin-left: 130px;
+  }
+
+  .opt_tickets a{
+    color: black;
+    font-size: 12px;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+  }
+
+.container_opt_tickets img{
+    width: 20px;
+    height: 25px;
+}
+
+.icons{
+    margin: 0 15px;
+}
+
+.searched_results{
+    display: flex;
+    flex-flow: row;
+    height: 50px;
+    background-image: linear-gradient(180deg, #2193b0, #6dd5ed);
+    align-content: center;
+    /* border: 2px solid red; */
+}
+
+.searched_results span{
+    /* border: 2px solid teal; */
+    margin: auto;
+    color: white;
+    font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.result_container{
+    background-color: #e8eced;
+    display: flex;
+    width: 100%;
+}
+
+.result_container .aside_bar{
+    height: auto;
+    width: 20%;
+    /* border: 2px solid teal; */
+    box-shadow: 2px 2px 5px rgb(204, 203, 203);
+}
+
+.aside_bar #aside_text{
+    /* background-color: red; */
+    color: grey;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "ubuntu";
+    border-bottom: 2px solid black;
+}
+
+.opt_of_filter{
+    margin: 5px auto;
+    /* border: 2px solid red; */
+    width: 85%;
+    text-align: left;
+}
+
+.opt_of_filter h6{
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 15px 5px 0px 0px;
+    margin-bottom:10px;
+    border-bottom: 1px solid black;
+}
+
+.filter-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: #3f35f8;
+}
+input[type="checkbox"] {
+    margin-left: 20px;
+}
+input[type="submit"] {
+    font-family: "ubuntu";
+    font-size: 12px;
+    padding: 4px 8px;
+    background-color: #e62d2d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0px auto;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+#main_grab_result_container{
+    width: 75%;
+}
+
+.airlines_icons img{
+    height: 20px;
+    width: 20px;
+
+}
+
+.price-range-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: #3f35f8;
+}
+
+.price-range-input {
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: #3f35f8;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.grab_result{
+    display: flex;
+    width: 100%;
+    margin: 20px 5px;
+    align-items: center;
+    /* justify-content: center; */
+    box-shadow: 2px 2px 5px rgb(214, 211, 211);
+}
+
+.result_box-heading-1{
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 10px;
+    color: rgb(96, 94, 94);
+    /* text-align: center; */
+}
+
+.sub_res_container .grab_result{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sub_res_container{
+    margin: 2px 15px;
+}
+
+.result_box{
+    width: 140px;
+    /* border: 2px solid green; */
+}
+
+.result_box p{
+    font-family: "ubuntu";
+    font-size: 10px;
+    color: black
+}
+
+.result_box .link a{
+    font-family: "ubuntu";
+    font-size: 10px;
+    color: blue;
+    text-decoration: none;
+}
+
+.result_box .departing_time{
+    font-family: "ubuntu";
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.result_box .starting_arrival_point{
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+}
+
+.result_box #box-3_duration{
+    font-family: sans-serif;
+    font-size: 10px;
+    color: rgb(188, 185, 185);
+    text-align: center;
+}
+
+.result_box #box-3_duration:hover{
+    color: #ee0653;
+    text-decoration: underline;
+    transition: all ease 0.4s;
+
+}
+
+#price_of_ticket{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: rgb(218, 25, 25);
+    text-align: center;
+}
+
+.more_fare{
+    position: relative;
+    left: 35px;
+    outline: none;
+    border: 1px solid rgb(21, 21, 219);
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.more_fare p{
+    color: rgb(21, 21, 219);
+}
+
+.book_now{
+    background-color: orangered;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 6px 28px;
+}
+
+.book_now #b_n_para{
+    color: white;
+    text-decoration: none;
+    /* margin: 0px 20px; */
+
+}
+
+.book_now #b_n_para .book_me{
+    color: white;
+
+}
+
+#limited_seat{
+    color: rgb(238, 64, 11);
+    font-size: 8px;
+    margin: 0px 36px;
+}

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Online</title>
+    <link rel="stylesheet" href="style_search.css">
+    <link rel="stylesheet" href="footer-01.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_logo">
+            <span id="front">EASY</span>
+            <span>tiX</span>
+        </div>
+        <div class="menu">
+            <ul class="nav_links">
+                <li class="link"><a href="./online_flight_hotels.html">Home</a></li>
+                <li class="link"><a href="#">About</a></li>
+                <li class="link"><a href="#">Offers</a></li>
+                <li class="link"><a href="#">Seats</a></li>
+                <li class="link"><a href="#">Destinations</a></li>
+              </ul>
+              <div class="contact-btn">
+                <button class="btn">Contact</button>
+              </div>
+        </div>
+      </nav>
+      <section class="opt_tickets">
+        <div class="container_opt_tickets">
+            <div class="icons" id="flight">
+                <span><a href="./online_flight_hotels.html" class="t_options">
+                    Flights
+                </a></span>
+                <span>
+                    <img src="./images/airplane.png" alt="">
+                </span>
+            </div>
+
+
+            <div class="icons">
+                <span><a href="" class="t_options">
+                    Flight+Hotel
+                </a></span>
+                <span>
+                    <img src="./images/hotel+flight.png" alt="">
+                </span>
+            </div>
+
+            <div class="icons">
+                <span><a href="" class="t_options">
+                    Trains
+                </a></span>
+                <span>
+                    <img src="./images/train.png" alt="">
+                </span>  
+            </div>
+
+            <div class="icons">
+                <span><a href="" class="t_options">
+                    Buses
+                </a></span>
+                <span>
+                    <img src="./images/bus (1).png" alt="">
+                </span>  
+            </div>
+        </div>
+      </section>
+    </nav>
+
+    <div class="searched_results">
+        <span>Searched Results</span>
+    </div>
+
+    <div class="result_container">
+        <div class="aside_bar">
+            <div class="secodary_container">
+                <p id="aside_text">filter</p>
+            </div>
+
+            <div class="opt_of_filter">
+                <h6>POPULAR FILTER</h6>
+                    <form action="/action_page.php">
+                        <input type="checkbox" id="filter1" name="filter1" value="Direct">
+                        <label class="filter-label" for="filter1"> Direct Flights</label><br>
+                        <input type="checkbox" id="filter2" name="filter2" value="WiFi">
+                        <label class="filter-label" for="filter2"> WiFi Onboard</label><br>
+                        <input type="checkbox" id="filter3" name="filter3" value="Entertainment">
+                        <label class="filter-label" for="filter3"> In-flight Entertainment</label><br>
+                        <input type="checkbox" id="filter4" name="filter4" value="Meals">
+                        <label class="filter-label" for="filter4"> Meal Options</label><br>
+                        <input type="checkbox" id="filter5" name="filter5" value="Comfort">
+                        <label class="filter-label" for="filter5"> Comfort Class</label><br>
+                        <input type="checkbox" id="filter6" name="filter6" value="Baggage">
+                        <label class="filter-label" for="filter6"> Extra Baggage Allowance</label><br>
+                        <input type="checkbox" id="filter7" name="filter7" value="Priority">
+                        <label class="filter-label" for="filter7"> Priority Boarding</label><br>
+                        <input type="checkbox" id="filter8" name="filter8" value="Loyalty">
+                        <label class="filter-label" for="filter8"> Loyalty Programs</label><br>
+                        <input type="checkbox" id="filter9" name="filter9" value="Flexible">
+                        <label class="filter-label" for="filter9"> Flexible Booking</label><br>
+                        <input type="checkbox" id="filter10" name="filter10" value="Family">
+                        <label class="filter-label" for="filter10"> Family-Friendly</label><br><br>
+                        <input type="submit" value="Done">                        
+                </form>
+
+                <h6>AIRLINES</h6>
+                    <form action="/action_page.php" class="airlines_icons">
+                        <input type="checkbox" id="filter1" name="filter1" value="Direct">
+                        <img src="./images/air-canada.png" alt="">
+                        <label class="filter-label" for="filter1">Air Canada</label><br>
+                        <input type="checkbox" id="filter2" name="filter2" value="WiFi">
+                        <img src="./images/singapore_airlines.png" alt="">
+                        <label class="filter-label" for="filter2">Virgin Atlantic</label><br>
+                        <input type="checkbox" id="filter3" name="filter3" value="Entertainment">
+                        <img src="./images/emirates.png" alt="">
+                        <label class="filter-label" for="filter3">Emirates</label><br>
+                        <input type="checkbox" id="filter4" name="filter4" value="Meals">
+                        <img src="./images/inner_icon_book.png" alt="">
+                        <label class="filter-label" for="filter4">Delta Air Lines</label><br>
+                        <input type="checkbox" id="filter5" name="filter5" value="Comfort">
+                        <img src="./images/singapore_airlines.png" alt="">
+                        <label class="filter-label" for="filter5">Singapore Airlines
+                        </label><br>
+                        <input type="checkbox" id="filter6" name="filter6" value="Baggage">
+                        <img src="./images/japan_airlines.png" alt="">
+                        <label class="filter-label" for="filter6">Japan Airlines</label><br>
+                        <input type="checkbox" id="filter7" name="filter7" value="Priority">
+                        <img src="./images/lufthansa.png" alt="">
+                        <label class="filter-label" for="filter7">Lufthansa</label><br>
+                        <input type="checkbox" id="filter8" name="filter8" value="Loyalty">
+                        <img src="./images/united_airlines.png" alt="">
+                        <label class="filter-label" for="filter8">United Airlines</label><br>
+                        <input type="checkbox" id="filter9" name="filter9" value="Flexible">
+                        <img src="./images/british_airlines.png" alt="">
+                        <label class="filter-label" for="filter9">British Airways</label><br>
+                        <input type="checkbox" id="filter10" name="filter10" value="Family">
+                        <img src="./images/cathay_pacific.png" alt="">
+                        <label class="filter-label" for="filter10">Cathay Pacific</label><br><br>
+                        <input type="submit" value="Done">                        
+                </form>
+
+                <h6>PRICE RANGE</h6>
+                <div class="price-range-container">
+                    <div class="price-range-input">
+                        <label for="minPrice">Min Price:</label>
+                        <input type="number" id="minPrice" name="minPrice" min="0" max="1000" step="10" placeholder="Min Price">
+                    </div>
+                    <div class="price-range-input">
+                        <label for="maxPrice">Max Price:</label>
+                        <input type="number" id="maxPrice" name="maxPrice" min="0" max="1000" step="10" placeholder="Max Price">
+                    </div>
+                    <input type="submit" value="Apply">
+                </div>
+            </div>
+        </div>
+
+        <div class="sub_res_container" id="main_grab_result_container">
+
+            <div class="grab_result" id="heading-1">
+                <div class="result_box-heading-1" id="box-1">
+                    <p>Airlines</p>
+                </div>
+                <div class="result_box-heading-1" id="box-2">
+                    <p>Departure</p>
+                </div>
+                <div class="result_box-heading-1" id="box-3">
+                    <p>Duration</p>
+                </div>
+                <div class="result_box-heading-1" id="box-4">
+                    <p>Arrive</p>
+                </div>
+                <div class="result_box-heading-1" id="box-5">
+                    <p>Price</p>
+                </div>
+                <div class="result_box-heading-1" id="box-6">
+                    <p>Airlines</p>
+                </div>
+            </div>
+
+
+            <div class="grab_result" id="result-1">
+                <div class="result_box" id="box-1">
+                    <p>Enjoy Free Meals</p>
+                    <img src="./images/singapore_airlines.png" alt="">
+                    <div class="link">
+                        <a href="#">Flight Details</a>
+                    </div>
+                </div>
+                <div class="result_box" id="box-2">
+                    <p class="departing_time">07:30</p>
+                    <p class="starting_arrival_point"> Sydney (SYD)</p>
+                </div>
+                <div class="result_box" id="box-3">
+                    <p id="box-3_duration">2hr 15mins</p>
+                </div>
+                <div class="result_box" id="box-4">
+                    <p class="departing_time">09:15</p>
+                    <p class="starting_arrival_point">Dubai (DXB)</p>
+                </div>
+                <div class="result_box" id="box-5">
+                    <p id="price_of_ticket">$1200</p>
+                    <button class="more_fare">
+                        <p>More Fare +</p>
+                    </button>
+                </div>
+                <div class="result_box" id="box-6">
+                    <button class="book_now">
+                        <a href="payment04.html"  id="b_n_para">
+                            <p class="book_me">Book Now</p>
+                        </a>
+                    </button>
+                    <p id="limited_seat">3 seats left</p>
+                </div>
+            </div>
+            <div class="grab_result" id="result-2">
+                <div class="result_box" id="box-1">
+                    <p>Enjoy Free Meals</p>
+                    <img src="./images/air-canada.png" alt="">
+                    <div class="link">
+                        <a href="#">Flight Details</a>
+                    </div>
+                </div>
+                <div class="result_box" id="box-2">
+                    <p class="departing_time">10:00</p>
+                    <p class="starting_arrival_point">New York (JFK)</p>
+                </div>
+                <div class="result_box" id="box-3">
+                    <p id="box-3_duration">12hrs</p>
+                </div>
+                <div class="result_box" id="box-4">
+                    <p class="departing_time">22:00</p>
+                    <p class="starting_arrival_point">London (LHR)</p>
+                </div>
+                <div class="result_box" id="box-5">
+                    <p id="price_of_ticket">$8500</p>
+                    <button class="more_fare">
+                        <p>More Fare +</p>
+                    </button>
+                </div>
+                <div class="result_box" id="box-6">
+                    <button class="book_now">
+                        <a href="payment04.html"  id="b_n_para">
+                            <p class="book_me">Book Now</p>
+                        </a>
+                    </button>
+                    <p id="limited_seat">3 seats left</p>
+                </div>
+            </div>
+            <div class="grab_result" id="result-3">
+                <div class="result_box" id="box-1">
+                    <p>Enjoy Free Meals</p>
+                    <img src="./images/american_airlines.png" alt="">
+                    <div class="link">
+                        <a href="#">Flight Details</a>
+                    </div>
+                </div>
+                <div class="result_box" id="box-2">
+                    <p class="departing_time">8:00 AM</p>
+                    <p class="starting_arrival_point">Paris (CDG)</p>
+                </div>
+                <div class="result_box" id="box-3">
+                    <p id="box-3_duration"> 4 hours</p>
+                </div>
+                <div class="result_box" id="box-4">
+                    <p class="departing_time">12:00</p>
+                    <p class="starting_arrival_point">New York (JFK)</p>
+                </div>
+                <div class="result_box" id="box-5">
+                    <p id="price_of_ticket">$5500</p>
+                    <button class="more_fare">
+                        <p>More Fare +</p>
+                    </button>
+                </div>
+                <div class="result_box" id="box-6">
+                    <button class="book_now">
+                        <a href="payment04.html"  id="b_n_para">
+                            <p class="book_me">Book Now</p>
+                        </a>
+                    </button>
+                    <p id="limited_seat">0 seat left</p>
+                </div>
+            </div>
+            <div class="grab_result" id="result-4">
+                <div class="result_box" id="box-1">
+                    <p>Enjoy Free Meals</p>
+                    <img src="./images/emirates.png" alt="">
+                    <div class="link">
+                        <a href="#">Flight Details</a>
+                    </div>
+                </div>
+                <div class="result_box" id="box-2">
+                    <p class="departing_time">03:45</p>
+                    <p class="starting_arrival_point">Beijing (PEK)</p>
+                </div>
+                <div class="result_box" id="box-3">
+                    <p id="box-3_duration">1hr 30mins</p>
+                </div>
+                <div class="result_box" id="box-4">
+                    <p class="departing_time">05:15</p>
+                    <p class="starting_arrival_point">Sydney (SYD)</p>
+                </div>
+                <div class="result_box" id="box-5">
+                    <p id="price_of_ticket">$6300</p>
+                    <button class="more_fare">
+                        <p>More Fare +</p>
+                    </button>
+                </div>
+                <div class="result_box" id="box-6">
+                    <button class="book_now">
+                        <a href="payment04.html"  id="b_n_para">
+                            <p class="book_me">Book Now</p>
+                        </a>
+                    </button>
+                    <p id="limited_seat">3 seats left</p>
+                </div>
+            </div>
+            <div class="grab_result" id="result-5">
+                <div class="result_box" id="box-1">
+                    <p>Enjoy Free Meals</p>
+                    <img src="./images/lufthansa.png" alt="">
+                    <div class="link">
+                        <a href="#">Flight Details</a>
+                    </div>
+                </div>
+                <div class="result_box" id="box-2">
+                    <p class="departing_time">13:00</p>
+                    <p class="starting_arrival_point">Tokyo (HND)</p>
+                </div>
+                <div class="result_box" id="box-3">
+                    <p id="box-3_duration">2hr 15mins</p>
+                </div>
+                <div class="result_box" id="box-4">
+                    <p class="departing_time">15:00</p>
+                    <p class="starting_arrival_point">Seoul (ICN)</p>
+                </div>
+                <div class="result_box" id="box-5">
+                    <p id="price_of_ticket">$9500</p>
+                    <button class="more_fare">
+                        <p>More Fare +</p>
+                    </button>
+                </div>
+                <div class="result_box" id="box-6">
+                    <button class="book_now">
+                        <a href="payment04.html"  id="b_n_para">
+                            <p class="book_me">Book Now</p>
+                        </a>
+                    </button>
+                    <p id="limited_seat">4 seats left</p>
+                </div>
+            </div>
+            <div class="grab_result" id="result-6">
+                <div class="result_box" id="box-1">
+                    <p>Enjoy Free Meals</p>
+                    <img src="./images/british_airlines.png" alt="">
+                    <div class="link">
+                        <a href="#">Flight Details</a>
+                    </div>
+                </div>
+                <div class="result_box" id="box-2">
+                    <p class="departing_time">06:30</p>
+                    <p class="starting_arrival_point">Mumbai (BOM)</p>
+                </div>
+                <div class="result_box" id="box-3">
+                    <p id="box-3_duration">5 hrs</p>
+                </div>
+                <div class="result_box" id="box-4">
+                    <p class="departing_time">11:30</p>
+                    <p class="starting_arrival_point">Singapore (SIN)</p>
+                </div>
+                <div class="result_box" id="box-5">
+                    <p id="price_of_ticket">$7000</p>
+                    <button class="more_fare">
+                        <p>More Fare +</p>
+                    </button>
+                </div>
+                <div class="result_box" id="box-6">
+                    <button class="book_now">
+                        <a href="payment04.html"  id="b_n_para">
+                            <p class="book_me">Book Now</p>
+                        </a>
+                    </button>
+                    <p id="limited_seat">1 seat left</p>
+                </div>
+            </div>
+            <div class="grab_result" id="result-7">
+                <div class="result_box" id="box-1">
+                    <p>Enjoy Free Meals</p>
+                    <img src="./images/cathay_pacific.png" alt="">
+                    <div class="link">
+                        <a href="#">Flight Details</a>
+                    </div>
+                </div>
+                <div class="result_box" id="box-2">
+                    <p class="departing_time">13:30</p>
+                    <p class="starting_arrival_point">Sydney (SYD)</p>
+                </div>
+                <div class="result_box" id="box-3">
+                    <p id="box-3_duration">2hrs</p>
+                </div>
+                <div class="result_box" id="box-4">
+                    <p class="departing_time">14:30</p>
+                    <p class="starting_arrival_point">Auckland (AKL)</p>
+                </div>
+                <div class="result_box" id="box-5">
+                    <p id="price_of_ticket">$1200</p>
+                    <button class="more_fare">
+                        <p>More Fare +</p>
+                    </button>
+                </div>
+                <div class="result_box" id="box-6">
+                    <button class="book_now">
+                        <a href="payment04.html"  id="b_n_para">
+                            <p class="book_me">Book Now</p>
+                        </a>
+                    </button>
+                    <p id="limited_seat">5 seats left</p>
+                </div>
+            </div>
+            <div class="grab_result" id="result-8">
+                <div class="result_box" id="box-1">
+                    <p>Enjoy Free Meals</p>
+                    <img src="./images/delta_airlines.png" alt="">
+                    <div class="link">
+                        <a href="#">Flight Details</a>
+                    </div>
+                </div>
+                <div class="result_box" id="box-2">
+                    <p class="departing_time">07:30</p>
+                    <p class="starting_arrival_point">Dubai (DXB)</p>
+                </div>
+                <div class="result_box" id="box-3">
+                    <p id="box-3_duration">2hr 15mins</p>
+                </div>
+                <div class="result_box" id="box-4">
+                    <p class="departing_time">09:15</p>
+                    <p class="starting_arrival_point">Mumbai</p>
+                </div>
+                <div class="result_box" id="box-5">
+                    <p id="price_of_ticket">$1000</p>
+                    <button class="more_fare">
+                        <p>More Fare +</p>
+                    </button>
+                </div>
+                <div class="result_box" id="box-6">
+                    <button class="book_now">
+                        <a href="payment04.html"  id="b_n_para">
+                            <p class="book_me">Book Now</p>
+                        </a>
+                    </button>
+                    <p id="limited_seat">3 seats left</p>
+                </div>
+            </div>
+            
+            <div class="grab_result" id="result-9">
+                <div class="result_box" id="box-1">
+                    <p>Enjoy Free Meals</p>
+                    <img src="./images/united_airlines.png" alt="">
+                    <div class="link">
+                        <a href="#">Flight Details</a>
+                    </div>
+                </div>
+                <div class="result_box" id="box-2">
+                    <p class="departing_time">12:00</p>
+                    <p class="starting_arrival_point">New York (JFK)</p>
+                </div>
+                <div class="result_box" id="box-3">
+                    <p id="box-3_duration">3hrs</p>
+                </div>
+                <div class="result_box" id="box-4">
+                    <p class="departing_time">15:00</p>
+                    <p class="starting_arrival_point">Los Angeles (LAX)</p>
+                </div>
+                <div class="result_box" id="box-5">
+                    <p id="price_of_ticket">$1450</p>
+                    <button class="more_fare">
+                        <p>More Fare +</p>
+                    </button>
+                </div>
+                <div class="result_box" id="box-6">
+                    <button class="book_now">
+                        <a href="payment04.html"  id="b_n_para">
+                            <p class="book_me">Book Now</p>
+                        </a>
+                    </button>
+                    <p id="limited_seat">3 seats left</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Mission</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="#">Flights</a></li>
+              <li><a href="#">Hotels</a></li>
+              <li><a href="#">Packages</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact</h3>
+            <ul>
+              <li>+123456789</li>
+              <li>easytix@website.com</li>
+              <li>Kathmandu, Nepal</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Subscribe</h3>
+            <form class="subscribe-form" action="#">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
